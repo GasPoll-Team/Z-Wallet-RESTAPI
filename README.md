@@ -134,7 +134,7 @@ SECRET_KEY='VERY-SECRET-KEY'
 | 4.  | GET    | /auth/activate/:email/:token | Used for activating new account. |
 | 5.  |        | /auth/checkPIN/:pin          | Used for checking PIN .          |
 | 6.  | PATCH  | /auth/PIN                    | Used for set PIN / update PIN.   |
-| 7.  |        | /auth/reset                  | Used for resseting password.     |
+| 7.  |        | /auth/reset                  | Used for reseting password.     |
 | 8.  | DELETE | /auth/logout/:token          | Used for logout from system.     |
   
 
