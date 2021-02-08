@@ -2,7 +2,7 @@
 <h1 align="center">Zwallet Backend</h1>
 <p>This is the dependency of <a href="https://github.com/GasPoll-Team/Z-Wallet-React-Native">Zwallet App</a>.
   
-Built with NodeJs using the <a href="https://en.wikipedia.org/wiki/Express.js">expressJS</a> Framework.
+Built with NodeJs using the <a href="https://en.wikipedia.org/wiki/Express.js">Express.Js</a> Framework.
 
 
 Express.js is a web application framework for Node.js.</p> 
