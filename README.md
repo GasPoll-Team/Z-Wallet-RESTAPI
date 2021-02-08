@@ -172,7 +172,7 @@ SECRET_KEY='VERY-SECRET-KEY'
 
 ## Documentation
 
-For more, you can check it out below.
+For more documentation , check it out below!
 
 <a  href="https://documenter.getpostman.com/view/13530339/TW6xoU7C">
 
