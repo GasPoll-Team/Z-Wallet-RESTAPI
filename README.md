@@ -98,18 +98,12 @@ Example:
 ```bash
 
 MYSQL_HOST = 'localhost'
-
 MYSQL_USERNAME = 'root'
-
 MYSQL_DATABASE = 'zwallet_db'
-
 MYSQL_PASSWORD = ''
 
-
 USER_EMAIL= yourname@gmail.com
-
-PASS_EMAIL= my-email-password
-
+PASS_EMAIL= your-email-password
 SECRET_KEY='VERY-SECRET-KEY'
 
 ```
@@ -157,15 +151,28 @@ SECRET_KEY='VERY-SECRET-KEY'
 | 1.  | PATCH   | /topup/topupBalance | Used for topup any virtual number matched on user phone number |
  
 ### Tranfer Router
+**Used to all about tranfer feature needed**
 
+| No. | Method | Endpoint             | Information                             |
+| --- | ------ | -------------------- | --------------------------------------- |
+| 1.  | POST   | /tranfer/newTranfer  | Used to create new tranfer.             |
+| 2.  | GET    | /tranfer/search      | Used to search any recipient.           |
+| 3.  |        | /tranfer/contactUser | Used to get all contact data.           |
+| 4.  |        | /tranfer/details/:id | Used to get details of tranfer history. |
+
+### User Router
+**Used for any user feature**
+
+| No. | Method | Endpoint             | Information                                                |
+| --- | ------ | -------------------- | ---------------------------------------------------------- |
+| 1.  | GET    | /user/myProfile      | Used for get all data user that are logged in.             |
+| 2.  | PATCH  | /user/changePassword | Used to change password for user.                          |
+| 3.  |        | /user/changeInfo     | Used to change any info for example name and phone number. |
+| 4.  |        | /user/changePhoto    | Used to change profile picture for user.                   |
 
 ## Documentation
 
-  
-
-Check out the documentation here for your convenience.
-
-  
+For more, you can check it out below.
 
 <a  href="https://documenter.getpostman.com/view/13530339/TW6xoU7C">
 
