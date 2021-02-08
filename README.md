@@ -120,31 +120,44 @@ SECRET_KEY='VERY-SECRET-KEY'
   
 
 ## Endpoint
+ 
 
-  
+### Auth Router
 
-### Authentication Router
+**Used for authentication**
 
-  
-
-
-  
-
-### Transfer Router
-
-  
-
-
-
-  
-
-### Transaction Router
-
+| No. | Method | Endpoint                     | Information                      |
+| --- | ------ | ---------------------------- | -------------------------------- |
+| 1.  | POST   | /auth/signup                 | Used for signup new user.        |
+| 2.  |        | /auth/login                  | Used for login into app.         |
+| 3.  |        | /auth/forgot                 | Used for forgot password.        |
+| 4.  | GET    | /auth/activate/:email/:token | Used for activating new account. |
+| 5.  |        | /auth/checkPIN/:pin          | Used for checking PIN .          |
+| 6.  | PATCH  | /auth/PIN                    | Used for set PIN / update PIN.   |
+| 7.  |        | /auth/reset                  | Used for resseting password.     |
+| 8.  | DELETE | /auth/logout/:token          | Used for logout from system.     |
   
 
 
+### Home Router
+**Used for supplying data to home, history, and notification**
 
+| No. | Method | Endpoint            | Information                                                   |
+| --- | ------ | ------------------- | ------------------------------------------------------------- |
+| 1.  | GET    | /home/getBalance    | Used for get balance user that are logged in.                 |
+| 2.  |        | /home/getInvoice    | Used for get invoice (**IN** or **OUT**) with some range date |
+| 3.  |        | /home/getAllInvoice | Used for get **ALL** invoices with some range date            |
   
+
+### Topup Router
+**Used for topup any balance to user**
+
+| No. | Method. | Endpoint            | Information                                                    |
+| --- | ------- | ------------------- | -------------------------------------------------------------- |
+| 1.  | PATCH   | /topup/topupBalance | Used for topup any virtual number matched on user phone number |
+ 
+### Tranfer Router
+
 
 ## Documentation
 
